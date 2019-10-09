@@ -174,7 +174,7 @@ class Connection
             if ($error = $this->connection->getLastError() ?: null) {
                 $this->connection->clearLastError();
             }
-            throw new TransportException($error ?? sprintf('Could not delete message "%s" from the redis stream.', $id));
+            //throw new TransportException($error ?? sprintf('Could not delete message "%s" from the redis stream.', $id));
         }
     }
 
